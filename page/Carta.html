@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café & Tinta</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  
+  <header class="encabezado">
+
+      <a href="../index.html">
+    <img src="../assets/logo.jpg" alt="Logo de cafe" class="logo-cafe" loading="lazy" width="100"/>
+      </a>
+
+    <form action="" method="get">
+  <label for="Search"></label>
+  <input type="Search" id="Search" name="Search" placeholder="Search..." />
+  <button type="submit">🔍</button>
+    </form> 
+        <nav class="nav">
+
+        <ul>
+          
+        <li>
+          <a href="../index.html">Inicio</a>
+        </li> 
+        <li>
+      <a href="./Espacio.html">Espacio</a>
+        </li>
+        <li>
+      <a href="./Libreria.html">Libreria</a>
+        </li>
+        <li>
+      <a href="./Eventos.html">Eventos</a>
+        </li>
+        <li>
+      <a href="./Carta.html" class="activo">Carta</a>
+        </li>   
+        <li>
+      <a href="./Contacto.html">Contacto</a>
+    </li>
+        
+    </ul>
+    </nav>
+  </header>
+    <main>
+        <!-- AGREGAR A LA CARTA MAS TIPOS DE CAFE ,  BOLLERIA Y VINOS, CADA UNA ESTARA EN UN BLOQUE DIFERENTE-->
+  
+      <h1 class="titulos">Nuestra Carta</h1>
+          <section class="carta">
+            <nav>
+            <div class="menu-carrusel">
+                <div class="menu-carrusel-item"> 
+                  <img src="../imagenescafeteria/bolleriaycafe.jpg" alt="cafe y literatura" width="300" height="300">
+                  <h2>Cafés Especiales</h2>
+                      <p>Disfruta de nuestra selección de cafés especiales, preparados con granos de alta calidad y técnicas de elaboración cuidadas.<p>
+            
+        <ul>  
+          <li> Espresso ....................... 1,80 €</li>
+          <li>Doble Espresso ............ 2,20 €</li>
+          <li>Café Americano ........... 2,00 €</li>
+          <li>Cortado ........................ 2,00 €</li>
+          <li>Café con Leche ............ 2,20 €</li>
+          <li>Capuccino .................... 2,50 €</li>
+          <li>Latte Macchiato ........... 2,70 €</li>
+          <li>Moca (con chocolate) .. 3,00 €</li>
+          <li>Café Frappé (frío) ........ 3,20 €</li>
+          <li>Descafeinado ............... 2,00 €</li>
+        </ul>
+        </div>
+        <div class="menu-carrusel-item"> 
+          <img src="../imagenescafeteria/bolleriaycafe.jpg" alt="cafe y literatura" width="300" height="300">
+                <h2>Desayunos y Bollería</h2>
+        <p>Comienza tu día con nuestros deliciosos desayunos y bollería fresca, perfectos para acompañar tu café.<p> 
+        <ul>
+          <li>Croissant ............................................. 1,50 €</li>
+          <li>Croissant de mantequilla .................... 1,80 €</li>
+          <li>Croissant relleno de chocolate ............ 2,00 €</li>
+          <li>Medialuna glaseada ............................ 1,50 €</li>
+          <li>Ensaimada .......................................... 1,70 €</li>
+          <li>Napolitana de Chocolate .................... 1,80 €</li>
+          <li>Magdalena .......................................... 1,20 €</li>
+          <li>Tostada con Tomate y Aceite .............. 2,50 €</li>
+          <li>Tostada con Mantequilla y Mermelada  2,00 €</li>
+          <li>Bagel con Queso Crema ...................... 3,00 €</li>
+          <li>Tarta de manzana ................................. 3,50 €</li>
+          <li>Brownie de chocolate con nueces ........ 3,20 €</li>
+          <li>Cheesecake clásico ............................... 3,80 €</li>
+          <li>Bizcocho casero de limón ..................... 2,50 €</li>
+          <li>Yogur con Granola y Frutas .................. 3,50 €</li>
+          <li>Fruta Fresca ........................................... 2,50 €</li>
+        </ul>
+      </div>
+
+          <div class="menu-carrusel-item"> 
+          <img src="../imagenescafeteria/bolleriaycafe.jpg" alt="cafe y literatura" width="300" height="300">
+        <h2>Vinos y Licores</h2>
+        <p>Relájate con nuestra selección de vinos y licores, ideales para disfrutar al final del día.<p>
+        <ul>
+          <li>Copa de Vino Tinto .......... 4,00 €</li>
+          <li>Copa de Vino Blanco ........ 4,00 €</li>
+          <li>Copa de Vino Rosado ........ 4,00 €</li>
+          <li>Vino de la Casa (Botella) .. 15,00 €</li>
+          <li>Vino Reserva (Botella) ..... 25,00 €</li>
+          <li>Whisky .............................. 5,00 €</li>
+          <li>Ron .................................... 4,50 €</li>
+          <li>Ginebra .............................. 4,50 €</li>
+          <li>Vodka ................................. 4,50 €</li>
+          <li>Cóctel del Día .................... 6,00 €</li>
+        </ul>
+          </div>
+          <button class="prev">⟨</button>
+            <button class="next">⟩</button>
+        
+        </div>
+      </nav>
+    </section>
+    <section class="libreria">
+        <h2>Nuestros títulos destacados</h2>
+        
+        <nav>
+          <div class="carrusel">
+            <div class="carrusel-item">
+              <a href="Informaciondellibro.html">
+                <img src="../fotoslibros/portada_cien_anos_de_soledad_0.jpg" alt="Cien años de soledad" width="100" height="150" />
+              </a>
+            </div>
+
+            <div class="carrusel-item">
+              <a href="Informaciondellibro.html">
+                <img src="../fotoslibros/cartell-web-la-casa-de-los-espiritus-teatre-romea.jpg" alt="La casa de los espíritus" width="100" height="150" />
+              </a>
+            </div>
+
+            <div class="carrusel-item">
+              <a href="Informaciondellibro.html">
+                <img src="../fotoslibros/ficcioneslibro.jpg" alt="Ficciones" width="100" height="150" />
+              </a>
+            </div>
+
+            <div class="carrusel-item">
+              <a href="Informaciondellibro.html">
+                <img src="../fotoslibros/rayuela.jpg" alt="Rayuela" width="100" height="150" />
+              </a>
+            </div>
+
+            <div class="carrusel-item">
+              <a href="Informaciondellibro.html">
+                <img src="../fotoslibros/elamorenlostiemposdelcolerajpg.jpg" alt="El amor en los tiempos del cólera" width="100" height="150" />
+              </a>
+            </div>
+
+            <div class="carrusel-item">
+              <a href="Informaciondellibro.html">
+                <img src="../fotoslibros/PedroParamo.jpg" alt="Pedro Páramo" width="100" height="150" />
+              </a>
+            </div>
+
+            <div class="carrusel-item">
+              <a href="Informaciondellibro.html">
+                <img src="../fotoslibros/laciudadylosperros.jpg" alt="La ciudad y los perros" width="100" height="150" />
+              </a>
+            </div>
+
+            <div class="carrusel-item">
+              <a href="Informaciondellibro.html">
+                <img src="../fotoslibros/eltunel.jpg" alt="El túnel" width="100" height="150" />
+              </a>
+            </div>
+
+            <div class="carrusel-item">
+              <a href="Informaciondellibro.html">
+                <img src="../fotoslibros/losdetectivessalvajes.jpg" alt="Los detectives salvajes" width="100" height="150" />
+              </a>
+            </div>
+
+            <div class="carrusel-item">
+              <a href="Informaciondellibro.html">
+                <img src="../fotoslibros/comoaguaparachocolate.jpg" alt="Como agua para chocolate" width="100" height="150" />
+              </a>
+            </div>
+
+            <div class="carrusel-item">
+              <a href="Informaciondellibro.html">
+                <img src="../fotoslibros/elaleph.jpg" alt="El Aleph" width="100" height="150" />
+              </a>
+            </div>
+
+            <div class="carrusel-item">
+              <a href="Informaciondellibro.html">
+                <img src="../fotoslibros/lasombradelviento.jpg" alt="La sombra del viento" width="100" height="150" />
+              </a>
+            </div>
+          </div>
+        </nav>
+
+        <button class="prev">⟨</button>
+        <button class="next">⟩</button>
+      </section>
+</main>
+<footer>
+      <h2>Derechos reservados de autor - Creado por Chelo </h2>
+    <p> 2025 Café Literario — Diseñado con pasión por la lectura.</p>
+    
+    <ul class="redes">
+      <li>
+        <img src="../assets/facebook.png" alt="facebook"
+        width="15">
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      </li>
+      <li>
+        <img src="../assets/instagram.png" alt="instagram"
+        width="18">
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+      </li>     
+      <li>
+      <img src="../assets/twitter.png" alt="twitter"
+      width="15">
+        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+      </li>
+    </ul>
+  </footer>
+</body>
+</html>
