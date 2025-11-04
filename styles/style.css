@@ -4,12 +4,12 @@
 body {
   margin: 0;
   padding: 70px 0 0 0;
-  box-sizing: border-box;
   font-family: "Montserrat Alternates", "Arial", sans-serif;
   background-image: url("../imagenescafeteria/Café\ y\ literatura.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  color: #111;
 }
 
 /* -- HEADER FIJO-- */
@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 40px;
+  margin: 0px;
   padding: 0;
 }
 
@@ -131,26 +131,30 @@ body {
   color: #222;
 }
 
-/* ---------------------------------------------
-   MAIN INDEX
---------------------------------------------- */
+/* -- MAIN INDEX-- */
 .container-index {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   margin: 40px;
   padding: 0;
 }
-
-/* ---------------------------------------------
-  MAIN ESPACIO
---------------------------------------------- */
 main .titulos {
-  color: rgb(165, 200, 24);
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 24px;
+  background-color: rgb(165, 200, 24);
+  color:rgb(2, 2, 2);
+  padding:1rem ;
+  border-radius: 10px;
+  font-family: "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 2px auto;
+  width: 28%;
+  opacity: 85%;
 
 }
+/* --EL ESPACIO-- */
+
 
 .container-espacio {
   display: flex;
@@ -244,26 +248,25 @@ main .el-espacio1 p {
   color: var(--naranja);
 }
 /* -- MAIN EVENTOS-- */
-main .eventos {
+main .Eventos {
   color: black;
   font-weight: bold;
   align-items: center;
   background-color: rgb(165, 200, 24);
   opacity: 85%;
   border-radius: 10px;
-  padding: 30px;
+  padding: 30px ; 
   margin: 50px;
-  width: 80vw 80vw;
 }
-main .eventos h2 {
+main .Eventos h2 {
   display: block;
-  text-align: right;
+  text-align: center;
   padding: 0px 130px 0px 0px;
   margin: 0px;
   color: black;
 }
 
-main .eventos img {
+main .Eventos img {
   display: inline;
   align-items: right;
   margin: 0 auto 20px auto;
@@ -543,33 +546,66 @@ textarea {
 }
 
 /* -- FOOTER-- */
-footer h2 {
-  color: rgb(165, 200, 24);
+
+footer {
+  background-color: rgb(165, 200, 24);
+  opacity: 85%;
+  padding: 2rem 1rem;
+  margin: 20px auto;
   text-align: center;
-  font-family: "Arial", sans-serif;
+  border-radius: 10px 10px 10px 10px;
+  color: #111; 
+  font-family: 'Montserrat', Arial, sans-serif;
+  line-height: 1.6;
 }
+
+
+footer h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #000;
+}
+
 
 footer p {
-  color: rgb(165, 200, 24);
-  text-align: center;
-  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  
 }
 
-footer ul li {
+footer .redes {
   list-style: none;
-  color: rgb(165, 200, 24);
-  font-size: 20px;
-  margin: 10px;
   padding: 10px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
-footer ul li a {
-  color: rgb(165, 200, 24);
+
+footer .redes li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+footer .redes a {
   text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  transition: color 0.3s;
 }
 
-/* -- RESPONSIVIDAD (pantallas pequeñas)-- */
+
+footer .redes a:hover {
+  color: #333;
+}
+
+
+/* -- RESPONSIVIDAD-- */
 @media (max-width: 768px) {
   #el-espacio,
   #libreria,
