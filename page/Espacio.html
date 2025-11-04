@@ -1,158 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Café & Tinta</title>
-    <link rel="stylesheet" href="../styles/style.css">
-</head>
-<body>
-  <div class="container-espacio">
-    <header class="encabezado">
-      <a href="../index.html">
-        <img src="../assets/logo.jpg" alt="Logo de cafe" class="logo-cafe" loading="lazy" width="100" />
-      </a>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <div class="container-index">
+<header class="encabezado">
 
-      <form action="" method="get">
-        <label for="Search"></label>
-        <input type="search" id="Search" name="Search" placeholder="Search..." />
-        <button type="submit">🔍</button>
-      </form>
-
-      <nav class="nav">
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./Espacio.html" class="activo" >Espacio</a></li>
-          <li><a href="./Libreria.html">Librería</a></li>
-          <li><a href="./Eventos.html">Eventos</a></li>
-          <li><a href="./Carta.html">Carta</a></li>
-          <li><a href="./Contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <h1 class="titulos">Espacio</h1>
-
-      <div class="container-espacio">
-        <section class="el-espacio">
-          <img src="../imagenescafeteria/espaciocomunpersonas.jpg" alt="Espacio del café" class="img-full" loading="lazy" />
-          <p>
-            Contamos con espacios pensados para la lectura, rincones íntimos para charlas y una pequeña librería con selección curada de autores independientes. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos minima asperiores amet voluptatem reiciendis maxime. Fuga eos qui dignissimos. Repellendus odit atque minima dolorum eius nam dolore nesciunt cumque nihil. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam expedita alias hic voluptate eligendi architecto! Maiores, officiis? Fugiat, voluptatum quam quia est porro expedita nam! In molestiae doloremque dolore debitis?
-          </p>
-        </section>
-
-        <section class="el-espacio1">
-          <p>
-            En Café & Tinta, hemos creado un espacio donde la pasión por la lectura se encuentra con el amor por el café. Nuestro café literario es más que un lugar para disfrutar de una taza de café; es un refugio para los amantes de los libros y un punto de encuentro para la comunidad. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam expedita alias hic voluptate eligendi architecto! Maiores, officiis? Fugiat, voluptatum quam quia est porro expedita nam! In molestiae doloremque dolore debitis?
-          </p>
-          <img src="../imagenescafeteria/cartelunbuendiaparauncafe.jpg" alt="Un buen día para un café" class="img-full" loading="lazy" />
-        </section>
-      </div>
-
-      <section class="libreria">
-        <h2>Nuestros títulos destacados</h2>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid" >
+    <a class="navbar-brand" href="./index.html">
+         <img src="../assets/logo.jpg" alt="Logo de cafe" class="logo-cafe" loading="lazy" width="100"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link activo" aria-current="page" href="./Espacio.html">Espacio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Libreria.html">Librería</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Eventos.html">Eventos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Carta.html">Carta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Contacto.html">Contacto</a>
+        </li>
         
-        <nav>
-          <div class="carrusel">
-            <div class="carrusel-item">
-              <a href="Informaciondellibro.html">
-                <img src="../fotoslibros/portada_cien_anos_de_soledad_0.jpg" alt="Cien años de soledad" width="100" height="150" />
-              </a>
-            </div>
-
-            <div class="carrusel-item">
-              <a href="Informaciondellibro.html">
-                <img src="../fotoslibros/cartell-web-la-casa-de-los-espiritus-teatre-romea.jpg" alt="La casa de los espíritus" width="100" height="150" />
-              </a>
-            </div>
-
-            <div class="carrusel-item">
-              <a href="Informaciondellibro.html">
-                <img src="../fotoslibros/ficcioneslibro.jpg" alt="Ficciones" width="100" height="150" />
-              </a>
-            </div>
-
-            <div class="carrusel-item">
-              <a href="Informaciondellibro.html">
-                <img src="../fotoslibros/rayuela.jpg" alt="Rayuela" width="100" height="150" />
-              </a>
-            </div>
-
-            <div class="carrusel-item">
-              <a href="Informaciondellibro.html">
-                <img src="../fotoslibros/elamorenlostiemposdelcolerajpg.jpg" alt="El amor en los tiempos del cólera" width="100" height="150" />
-              </a>
-            </div>
-
-            <div class="carrusel-item">
-              <a href="Informaciondellibro.html">
-                <img src="../fotoslibros/PedroParamo.jpg" alt="Pedro Páramo" width="100" height="150" />
-              </a>
-            </div>
-
-            <div class="carrusel-item">
-              <a href="Informaciondellibro.html">
-                <img src="../fotoslibros/laciudadylosperros.jpg" alt="La ciudad y los perros" width="100" height="150" />
-              </a>
-            </div>
-
-            <div class="carrusel-item">
-              <a href="Informaciondellibro.html">
-                <img src="../fotoslibros/eltunel.jpg" alt="El túnel" width="100" height="150" />
-              </a>
-            </div>
-
-            <div class="carrusel-item">
-              <a href="Informaciondellibro.html">
-                <img src="../fotoslibros/losdetectivessalvajes.jpg" alt="Los detectives salvajes" width="100" height="150" />
-              </a>
-            </div>
-
-            <div class="carrusel-item">
-              <a href="Informaciondellibro.html">
-                <img src="../fotoslibros/comoaguaparachocolate.jpg" alt="Como agua para chocolate" width="100" height="150" />
-              </a>
-            </div>
-
-            <div class="carrusel-item">
-              <a href="Informaciondellibro.html">
-                <img src="../fotoslibros/elaleph.jpg" alt="El Aleph" width="100" height="150" />
-              </a>
-            </div>
-
-            <div class="carrusel-item">
-              <a href="Informaciondellibro.html">
-                <img src="../fotoslibros/lasombradelviento.jpg" alt="La sombra del viento" width="100" height="150" />
-              </a>
-            </div>
-          </div>
-        </nav>
-
-        <button class="prev">⟨</button>
-        <button class="next">⟩</button>
-      </section>
-    </main>
-
-    <footer>
-      <h2>Derechos reservados de autor - Creado por Chelo</h2>
-      <p>2025 Café Literario — Diseñado con pasión por la lectura.</p>
-
-      <ul class="redes">
-        <li>
-          <img src="../assets/facebook.png" alt="facebook" width="15" />
-          <a href="https://www.facebook.com" target="_blank">Facebook</a>
-        </li>
-        <li>
-          <img src="../assets/instagram.png" alt="instagram" width="18" />
-          <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        </li>
-        <li>
-          <img src="../assets/twitter.png" alt="twitter" width="15" />
-          <a href="https://www.twitter.com" target="_blank">Twitter</a>
-        </li>
       </ul>
-    </footer>
+    </div>
   </div>
-</body>
+      </header>
+
+      <main>
+        <h1 class="titulos">Espacio</h1>
+
+        <div class="container-espacio">
+          <section class="el-espacio">
+            <img
+              src="../imagenescafeteria/espaciocomunpersonas.jpg"
+              alt="Espacio del café"
+              class="img-full"
+              loading="lazy"
+            />
+            <p>
+              Contamos con espacios pensados para la lectura, rincones íntimos
+              para charlas y una pequeña librería con selección curada de
+              autores independientes. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Eos minima asperiores amet voluptatem reiciendis
+              maxime. Fuga eos qui dignissimos. Repellendus odit atque minima
+              dolorum eius nam dolore nesciunt cumque nihil. Lorem ipsum dolor
+              sit amet consectetur, adipisicing elit. Ullam expedita alias hic
+              voluptate eligendi architecto! Maiores, officiis? Fugiat,
+              voluptatum quam quia est porro expedita nam! In molestiae
+              doloremque dolore debitis?
+            </p>
+          </section>
+
+          <section class="el-espacio1">
+            <p>
+              En Café & Tinta, hemos creado un espacio donde la pasión por la
+              lectura se encuentra con el amor por el café. Nuestro café
+              literario es más que un lugar para disfrutar de una taza de café;
+              es un refugio para los amantes de los libros y un punto de
+              encuentro para la comunidad. Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Ullam expedita alias hic voluptate
+              eligendi architecto! Maiores, officiis? Fugiat, voluptatum quam
+              quia est porro expedita nam! In molestiae doloremque dolore
+              debitis?
+            </p>
+            <img
+              src="../imagenescafeteria/cartelunbuendiaparauncafe.jpg"
+              alt="Un buen día para un café"
+              class="img-full"
+              loading="lazy"
+            />
+          </section>
+        </div>
+
+        <section class="libreria">
+          <h2>Nuestros títulos destacados</h2>
+
+          <nav>
+            <div class="carrusel">
+              <div class="carrusel-item">
+                <a href="Informaciondellibro.html">
+                  <img
+                    src="../fotoslibros/portada_cien_anos_de_soledad_0.jpg"
+                    alt="Cien años de soledad"
+                    width="100"
+                    height="150"
+                  />
+                </a>
+              </div>
+
+              <div class="carrusel-item">
+                <a href="Informaciondellibro.html">
+                  <img
+                    src="../fotoslibros/cartell-web-la-casa-de-los-espiritus-teatre-romea.jpg"
+                    alt="La casa de los espíritus"
+                    width="100"
+                    height="150"
+                  />
+                </a>
+              </div>
+
+              <div class="carrusel-item">
+                <a href="Informaciondellibro.html">
+                  <img
+                    src="../fotoslibros/ficcioneslibro.jpg"
+                    alt="Ficciones"
+                    width="100"
+                    height="150"
+                  />
+                </a>
+              </div>
+
+              <div class="carrusel-item">
+                <a href="Informaciondellibro.html">
+                  <img
+                    src="../fotoslibros/rayuela.jpg"
+                    alt="Rayuela"
+                    width="100"
+                    height="150"
+                  />
+                </a>
+              </div>
+
+              <div class="carrusel-item">
+                <a href="Informaciondellibro.html">
+                  <img
+                    src="../fotoslibros/elamorenlostiemposdelcolerajpg.jpg"
+                    alt="El amor en los tiempos del cólera"
+                    width="100"
+                    height="150"
+                  />
+                </a>
+              </div>
+
+              <div class="carrusel-item">
+                <a href="Informaciondellibro.html">
+                  <img
+                    src="../fotoslibros/PedroParamo.jpg"
+                    alt="Pedro Páramo"
+                    width="100"
+                    height="150"
+                  />
+                </a>
+              </div>
+
+              <div class="carrusel-item">
+                <a href="Informaciondellibro.html">
+                  <img
+                    src="../fotoslibros/laciudadylosperros.jpg"
+                    alt="La ciudad y los perros"
+                    width="100"
+                    height="150"
+                  />
+                </a>
+              </div>
+
+              <div class="carrusel-item">
+                <a href="Informaciondellibro.html">
+                  <img
+                    src="../fotoslibros/eltunel.jpg"
+                    alt="El túnel"
+                    width="100"
+                    height="150"
+                  />
+                </a>
+              </div>
+
+              <div class="carrusel-item">
+                <a href="Informaciondellibro.html">
+                  <img
+                    src="../fotoslibros/losdetectivessalvajes.jpg"
+                    alt="Los detectives salvajes"
+                    width="100"
+                    height="150"
+                  />
+                </a>
+              </div>
+
+              <div class="carrusel-item">
+                <a href="Informaciondellibro.html">
+                  <img
+                    src="../fotoslibros/comoaguaparachocolate.jpg"
+                    alt="Como agua para chocolate"
+                    width="100"
+                    height="150"
+                  />
+                </a>
+              </div>
+
+              <div class="carrusel-item">
+                <a href="Informaciondellibro.html">
+                  <img
+                    src="../fotoslibros/elaleph.jpg"
+                    alt="El Aleph"
+                    width="100"
+                    height="150"
+                  />
+                </a>
+              </div>
+
+              <div class="carrusel-item">
+                <a href="Informaciondellibro.html">
+                  <img
+                    src="../fotoslibros/lasombradelviento.jpg"
+                    alt="La sombra del viento"
+                    width="100"
+                    height="150"
+                  />
+                </a>
+              </div>
+            </div>
+          </nav>
+
+          <button class="prev">⟨</button>
+          <button class="next">⟩</button>
+        </section>
+      </main>
+
+      <footer>
+        <h2>Derechos reservados de autor - Creado por Chelo</h2>
+        <p>2025 Café Literario — Diseñado con pasión por la lectura.</p>
+
+        <ul class="redes">
+          <li>
+            <img src="../assets/facebook.png" alt="facebook" width="15" />
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+          </li>
+          <li>
+            <img src="../assets/instagram.png" alt="instagram" width="18" />
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+          </li>
+          <li>
+            <img src="../assets/twitter.png" alt="twitter" width="15" />
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+          </li>
+        </ul>
+      </footer>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"
+      ></script>
+    </div>
+  </body>
 </html>

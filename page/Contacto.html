@@ -1,121 +1,182 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Café & Tinta — Contacto</title>
-  <link rel="stylesheet" href="../styles/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café & Tinta — Contacto</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+   <div class="container-index">
+<header class="encabezado">
 
-  <header class="encabezado">
-    <a href="../index.html">
-      <img src="../assets/logo.jpg" alt="Logo de Café & Tinta" class="logo-cafe" loading="lazy" width="100">
+        <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid" >
+    <a class="navbar-brand" href="./index.html">
+         <img src="../assets/logo.jpg" alt="Logo de cafe" class="logo-cafe" loading="lazy" width="100"/>
     </a>
-
-    <form action="" method="get" class="buscador">
-      <label for="Search" class="visually-hidden"></label>
-      <input type="search" id="Search" name="Search" placeholder="Search..." aria-label="Buscar">
-      <button type="submit">🔍</button>
-    </form>
-
-    <nav class="nav">
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="./Espacio.html">Espacio</a></li>
-        <li><a href="./Libreria.html">Librería</a></li>
-        <li><a href="./Eventos.html">Eventos</a></li>
-        <li><a href="./Carta.html">Carta</a></li>
-        <li><a href="./Contacto.html" class="activo">Contacto</a></li>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="./Espacio.html">Espacio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Libreria.html">Librería</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Eventos.html">Eventos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Carta.html">Carta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link activo" href="./Contacto.html">Contacto</a>
+        </li>
+        
       </ul>
-    </nav>
-  </header>
+    </div>
+  </div>
+      </header>
+    <main>
+      <section class="Contacto">
+        <h1 class="titulos">Contacto</h1>
 
-  <main>
-    <section class="Contacto">
-      <h1 class="titulos">Contacto</h1>
+        <div class="info-contacto">
+          <img
+            src="../imagenescafeteria/entradaplantaslibrocafe.jpg"
+            alt="Entrada del café con plantas y libros"
+            width="400"
+            height="300"
+          />
 
-      <div class="info-contacto">
-        <img src="../imagenescafeteria/entradaplantaslibrocafe.jpg" alt="Entrada del café con plantas y libros" width="400" height="300">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6150.30476510461!2d2.653414319961287!3d39.57871593367484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1758673361005!5m2!1ses!2ses"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
 
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6150.30476510461!2d2.653414319961287!3d39.57871593367484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1758673361005!5m2!1ses!2ses"
-          width="400"
-          height="300"
-          style="border:0;"
-          allowfullscreen
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-
-        <div class="texto-contacto">
-          <p><strong>Ubicación:</strong> Calle Ejemplo 123, Palma de Mallorca</p>
-          <p><strong>Horarios:</strong> Lunes a Domingo, 8:00 - 22:00</p>
-          <p><strong>Descripción:</strong> Nos encontramos en el corazón del casco antiguo, rodeados de librerías, cafés y espacios culturales. ¡Te esperamos para disfrutar de una experiencia única entre libros y aromas!</p>
-        </div>
-      </div>
-
-      <form action="/submit" method="post" class="form-contacto">
-        <div class="campo">
-          <label for="nombre">Nombre y Apellido:</label>
-          <input type="text" id="nombre" name="nombre" placeholder="John Doe" required>
-        </div>
-
-        <div class="campo">
-          <label for="celular">Celular:</label>
-          <input type="tel" id="celular" name="celular" placeholder="+34 600 000 000" required>
-        </div>
-
-        <div class="campo">
-          <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" placeholder="ejemplo@email.com" required>
+          <div class="texto-contacto">
+            <p>
+              <strong>Ubicación:</strong> Calle Ejemplo 123, Palma de Mallorca
+            </p>
+            <p><strong>Horarios:</strong> Lunes a Domingo, 8:00 - 22:00</p>
+            <p>
+              <strong>Descripción:</strong> Nos encontramos en el corazón del
+              casco antiguo, rodeados de librerías, cafés y espacios culturales.
+              ¡Te esperamos para disfrutar de una experiencia única entre libros
+              y aromas!
+            </p>
+          </div>
         </div>
 
-        <div class="campo">
-          <label for="password">Contraseña:</label>
-          <input type="password" id="password" name="password" placeholder="Contraseña" required>
-        </div>
+        <form action="/submit" method="post" class="form-contacto">
+          <div class="campo">
+            <label for="nombre">Nombre y Apellido:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="John Doe"
+              required
+            />
+          </div>
 
-        <div class="campo">
-          <label for="consulta">Consulta:</label>
-          <textarea id="consulta" name="consulta" placeholder="Escribe tu mensaje o consulta..." required></textarea>
-        </div>
+          <div class="campo">
+            <label for="celular">Celular:</label>
+            <input
+              type="tel"
+              id="celular"
+              name="celular"
+              placeholder="+34 600 000 000"
+              required
+            />
+          </div>
 
-        <div class="campo terminos">
-          <input type="checkbox" id="terminos" name="terminos" required>
-          <label for="terminos">Acepto los términos y condiciones</label>
-        </div>
+          <div class="campo">
+            <label for="email">Correo electrónico:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="ejemplo@email.com"
+              required
+            />
+          </div>
 
-        <div class="botones-form">
-          <input type="submit" value="Enviar">
-          <input type="reset" value="Reiniciar">
-        </div>
-      </form>
-    </section>
-  </main>
+          <div class="campo">
+            <label for="password">Contraseña:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Contraseña"
+              required
+            />
+          </div>
 
-  <footer>
-    <h2>Derechos reservados de autor - Creado por Chelo</h2>
-    <p>© 2025 Café Literario — Diseñado con pasión por la lectura.</p>
+          <div class="campo">
+            <label for="consulta">Consulta:</label>
+            <textarea
+              id="consulta"
+              name="consulta"
+              placeholder="Escribe tu mensaje o consulta..."
+              required
+            ></textarea>
+          </div>
 
-    <ul class="redes">
-      <li>
-        <img src="../assets/facebook.png" alt="facebook"
-        width="15">
-        <a href="https://www.facebook.com" target="_blank">Facebook</a>
-      </li>
-      <li>
-        <img src="../assets/instagram.png" alt="instagram"
-        width="18">
-        <a href="https://www.instagram.com" target="_blank">Instagram</a>
-      </li> 
-      <li>
-      <img src="../assets/twitter.png" alt="twitter"
-      width="15">
-        <a href="https://www.twitter.com" target="_blank">Twitter</a>
-      </li>
-    </ul>
-  </footer>
+          <div class="campo-terminos">
+            <label for="terminos">Acepto los términos y condiciones</label>
+            <input type="checkbox" id="terminos" name="terminos" required />
+          </div>
 
-</body>
+          <div class="botones-form">
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Reiniciar" />
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <h2>Derechos reservados de autor - Creado por Chelo</h2>
+      <p>© 2025 Café Literario — Diseñado con pasión por la lectura.</p>
+
+      <ul class="redes">
+        <li>
+          <img src="../assets/facebook.png" alt="facebook" width="15" />
+          <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        </li>
+        <li>
+          <img src="../assets/instagram.png" alt="instagram" width="18" />
+          <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </li>
+        <li>
+          <img src="../assets/twitter.png" alt="twitter" width="15" />
+          <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        </li>
+      </ul>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

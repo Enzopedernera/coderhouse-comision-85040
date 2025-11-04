@@ -1,199 +1,315 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Café & Tinta — Librería</title>
-  <link rel="stylesheet" href="../styles/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café & Tinta — Librería</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <div class="container-index">
+<header class="encabezado">
 
-  <header class="encabezado">
-    <a href="../index.html">
-      <img src="../assets/logo.jpg" alt="Logo de Café & Tinta" class="logo-cafe" width="100" loading="lazy">
+        <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid" >
+    <a class="navbar-brand" href="./index.html">
+         <img src="../assets/logo.jpg" alt="Logo de cafe" class="logo-cafe" loading="lazy" width="100"/>
     </a>
-
-    <form action="" method="get" class="buscador">
-      <label for="Search" class="visually-hidden"></label>
-      <input type="search" id="Search" name="Search" placeholder="Search...">
-      <button type="submit">🔍</button>
-    </form>
-
-    <nav class="nav">
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="./Espacio.html">Espacio</a></li>
-        <li><a href="./Libreria.html" class="activo">Librería</a></li>
-        <li><a href="./Eventos.html">Eventos</a></li>
-        <li><a href="./Carta.html">Carta</a></li>
-        <li><a href="./Contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section class="explora-libreria">
-      <h1 class="titulos">Explora nuestra librería</h1>
-      <p>Nuestra librería ofrece una cuidada selección de libros de autores independientes y clásicos de la literatura. Encuentra títulos únicos y ediciones especiales que no encontrarás en ningún otro lugar.</p>
-
-      <div class="categorias">
-
-        <section class="categoria">
-          <h3>Ficción</h3>
-          <ul>
-            <li><a href="./Informaciondellibro.html">Novelas contemporáneas</a></li>
-            <li><a href="./Informaciondellibro.html">Clásicos literarios</a></li>
-            <li><a href="./Informaciondellibro.html">Cuentos y relatos</a></li>
-            <li><a href="./Informaciondellibro.html">Fantasía y ciencia ficción</a></li>
-            <li><a href="./Informaciondellibro.html">Misterio y thriller</a></li>
-          </ul>
-        </section>
-
-        <section class="categoria">
-          <h3>No ficción</h3>
-          <ul>
-            <li><a href="./Informaciondellibro.html">Filosofía</a></li>
-            <li><a href="./Informaciondellibro.html">Psicología</a></li>
-            <li><a href="./Informaciondellibro.html">Historia</a></li>
-            <li><a href="./Informaciondellibro.html">Política y Economía</a></li>
-          </ul>
-        </section>
-
-        <section class="categoria">
-          <h3>Géneros Literarios</h3>
-          <ul>
-            <li><a href="./Informaciondellibro.html">Ciencia ficción</a></li>
-            <li><a href="./Informaciondellibro.html">Fantasía</a></li>
-            <li><a href="./Informaciondellibro.html">Terror y misterio</a></li>
-            <li><a href="./Informaciondellibro.html">Romance</a></li>
-            <li><a href="./Informaciondellibro.html">Poemas</a></li>
-          </ul>
-        </section>
-
-        <section class="categoria">
-          <h3>Público</h3>
-          <ul>
-            <li><a href="./Informaciondellibro.html">Infantil</a></li>
-            <li><a href="./Informaciondellibro.html">Juvenil</a></li>
-            <li><a href="./Informaciondellibro.html">Cómic y novela gráfica</a></li>
-            <li><a href="./Informaciondellibro.html">Libros ilustrados</a></li>
-          </ul>
-        </section>
-
-        <section class="categoria">
-          <h3>Arte & Estilo de vida</h3>
-          <ul>
-            <li><a href="./Informaciondellibro.html">Arte & Fotografía</a></li>
-            <li><a href="./Informaciondellibro.html">Gastronomía</a></li>
-            <li><a href="./Informaciondellibro.html">Viajes</a></li>
-            <li><a href="./Informaciondellibro.html">Música</a></li>
-          </ul>
-        </section>
-
-        <section class="categoria">
-          <h3>Ediciones Especiales</h3>
-          <ul>
-            <li><a href="./Informaciondellibro.html">Coleccionistas</a></li>
-            <li><a href="./Informaciondellibro.html">Ediciones ilustradas</a></li>
-            <li><a href="./Informaciondellibro.html">Autores independientes</a></li>
-            <li><a href="./Informaciondellibro.html">Primera edición</a></li>
-          </ul>
-        </section>
-
-      </div>
-
-      <article class="libro-destacado">
-        <img src="../fotoslibros/laciudadylosperros.jpg" alt="La ciudad y los perros" width="150" height="225">
-        <div class="info-libro">
-          <p><strong>Título:</strong> La Ciudad y los Perros</p>
-          <p><strong>Autor:</strong> Mario Vargas Llosa</p>
-          <p><strong>Género:</strong> Novela</p>
-          <p><strong>Año de Publicación:</strong> 1963</p>
-          <p><strong>Editorial:</strong> Editorial Seix Barral</p>
-          <p><strong>Páginas:</strong> 336</p>
-          <p><strong>ISBN:</strong> 978-84-322-1083-6</p>
-          <p><strong>Sinopsis:</strong> La novela se desarrolla en un colegio militar en Lima, Perú, y explora temas como la violencia, corrupción y la lucha por el poder entre los cadetes. Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-          <p><strong>Precio:</strong> $21.000</p>
-          <button type="button">Agregar al carrito</button>
-        </div>
-      </article>
-
-    </section>
-
-   <section class="libreria">
-        <h2>Nuestros títulos destacados</h2>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="./Espacio.html">Espacio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link activo" href="./Libreria.html">Librería</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Eventos.html">Eventos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Carta.html">Carta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Contacto.html">Contacto</a>
+        </li>
         
+      </ul>
+    </div>
+  </div>
+      </header>
+
+    <main>
+      <section class="explora-libreria">
+        <h1 class="titulos">Explora nuestra librería</h1>
+        <p>
+          Nuestra librería ofrece una cuidada selección de libros de autores
+          independientes y clásicos de la literatura. Encuentra títulos únicos y
+          ediciones especiales que no encontrarás en ningún otro lugar.
+        </p>
+
+        <div class="categorias">
+          <section class="categoria">
+            <h3>Ficción</h3>
+            <ul>
+              <li>
+                <a href="./Informaciondellibro.html">Novelas contemporáneas</a>
+              </li>
+              <li>
+                <a href="./Informaciondellibro.html">Clásicos literarios</a>
+              </li>
+              <li>
+                <a href="./Informaciondellibro.html">Cuentos y relatos</a>
+              </li>
+              <li>
+                <a href="./Informaciondellibro.html"
+                  >Fantasía y ciencia ficción</a
+                >
+              </li>
+              <li>
+                <a href="./Informaciondellibro.html">Misterio y thriller</a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="categoria">
+            <h3>No ficción</h3>
+            <ul>
+              <li><a href="./Informaciondellibro.html">Filosofía</a></li>
+              <li><a href="./Informaciondellibro.html">Psicología</a></li>
+              <li><a href="./Informaciondellibro.html">Historia</a></li>
+              <li>
+                <a href="./Informaciondellibro.html">Política y Economía</a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="categoria">
+            <h3>Géneros Literarios</h3>
+            <ul>
+              <li><a href="./Informaciondellibro.html">Ciencia ficción</a></li>
+              <li><a href="./Informaciondellibro.html">Fantasía</a></li>
+              <li>
+                <a href="./Informaciondellibro.html">Terror y misterio</a>
+              </li>
+              <li><a href="./Informaciondellibro.html">Romance</a></li>
+              <li><a href="./Informaciondellibro.html">Poemas</a></li>
+            </ul>
+          </section>
+
+          <section class="categoria">
+            <h3>Público</h3>
+            <ul>
+              <li><a href="./Informaciondellibro.html">Infantil</a></li>
+              <li><a href="./Informaciondellibro.html">Juvenil</a></li>
+              <li>
+                <a href="./Informaciondellibro.html">Cómic y novela gráfica</a>
+              </li>
+              <li>
+                <a href="./Informaciondellibro.html">Libros ilustrados</a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="categoria">
+            <h3>Arte & Estilo de vida</h3>
+            <ul>
+              <li>
+                <a href="./Informaciondellibro.html">Arte & Fotografía</a>
+              </li>
+              <li><a href="./Informaciondellibro.html">Gastronomía</a></li>
+              <li><a href="./Informaciondellibro.html">Viajes</a></li>
+              <li><a href="./Informaciondellibro.html">Música</a></li>
+            </ul>
+          </section>
+
+          <section class="categoria">
+            <h3>Ediciones Especiales</h3>
+            <ul>
+              <li><a href="./Informaciondellibro.html">Coleccionistas</a></li>
+              <li>
+                <a href="./Informaciondellibro.html">Ediciones ilustradas</a>
+              </li>
+              <li>
+                <a href="./Informaciondellibro.html">Autores independientes</a>
+              </li>
+              <li><a href="./Informaciondellibro.html">Primera edición</a></li>
+            </ul>
+          </section>
+        </div>
+
+        <article class="libro-destacado">
+          <img
+            src="../fotoslibros/laciudadylosperros.jpg"
+            alt="La ciudad y los perros"
+            width="150"
+            height="225"
+          />
+          <div class="info-libro">
+            <p><strong>Título:</strong> La Ciudad y los Perros</p>
+            <p><strong>Autor:</strong> Mario Vargas Llosa</p>
+            <p><strong>Género:</strong> Novela</p>
+            <p><strong>Año de Publicación:</strong> 1963</p>
+            <p><strong>Editorial:</strong> Editorial Seix Barral</p>
+            <p><strong>Páginas:</strong> 336</p>
+            <p><strong>ISBN:</strong> 978-84-322-1083-6</p>
+            <p>
+              <strong>Sinopsis:</strong> La novela se desarrolla en un colegio
+              militar en Lima, Perú, y explora temas como la violencia,
+              corrupción y la lucha por el poder entre los cadetes. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit...
+            </p>
+            <p><strong>Precio:</strong> $21.000</p>
+            <button type="button">Agregar al carrito</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="libreria">
+        <h2>Nuestros títulos destacados</h2>
+
         <nav>
           <div class="carrusel">
             <div class="carrusel-item">
               <a href="Informaciondellibro.html">
-                <img src="../fotoslibros/portada_cien_anos_de_soledad_0.jpg" alt="Cien años de soledad" width="100" height="150" />
+                <img
+                  src="../fotoslibros/portada_cien_anos_de_soledad_0.jpg"
+                  alt="Cien años de soledad"
+                  width="100"
+                  height="150"
+                />
               </a>
             </div>
 
             <div class="carrusel-item">
               <a href="Informaciondellibro.html">
-                <img src="../fotoslibros/cartell-web-la-casa-de-los-espiritus-teatre-romea.jpg" alt="La casa de los espíritus" width="100" height="150" />
+                <img
+                  src="../fotoslibros/cartell-web-la-casa-de-los-espiritus-teatre-romea.jpg"
+                  alt="La casa de los espíritus"
+                  width="100"
+                  height="150"
+                />
               </a>
             </div>
 
             <div class="carrusel-item">
               <a href="Informaciondellibro.html">
-                <img src="../fotoslibros/ficcioneslibro.jpg" alt="Ficciones" width="100" height="150" />
+                <img
+                  src="../fotoslibros/ficcioneslibro.jpg"
+                  alt="Ficciones"
+                  width="100"
+                  height="150"
+                />
               </a>
             </div>
 
             <div class="carrusel-item">
               <a href="Informaciondellibro.html">
-                <img src="../fotoslibros/rayuela.jpg" alt="Rayuela" width="100" height="150" />
+                <img
+                  src="../fotoslibros/rayuela.jpg"
+                  alt="Rayuela"
+                  width="100"
+                  height="150"
+                />
               </a>
             </div>
 
             <div class="carrusel-item">
               <a href="Informaciondellibro.html">
-                <img src="../fotoslibros/elamorenlostiemposdelcolerajpg.jpg" alt="El amor en los tiempos del cólera" width="100" height="150" />
+                <img
+                  src="../fotoslibros/elamorenlostiemposdelcolerajpg.jpg"
+                  alt="El amor en los tiempos del cólera"
+                  width="100"
+                  height="150"
+                />
               </a>
             </div>
 
             <div class="carrusel-item">
               <a href="Informaciondellibro.html">
-                <img src="../fotoslibros/PedroParamo.jpg" alt="Pedro Páramo" width="100" height="150" />
+                <img
+                  src="../fotoslibros/PedroParamo.jpg"
+                  alt="Pedro Páramo"
+                  width="100"
+                  height="150"
+                />
               </a>
             </div>
 
             <div class="carrusel-item">
               <a href="Informaciondellibro.html">
-                <img src="../fotoslibros/laciudadylosperros.jpg" alt="La ciudad y los perros" width="100" height="150" />
+                <img
+                  src="../fotoslibros/laciudadylosperros.jpg"
+                  alt="La ciudad y los perros"
+                  width="100"
+                  height="150"
+                />
               </a>
             </div>
 
             <div class="carrusel-item">
               <a href="Informaciondellibro.html">
-                <img src="../fotoslibros/eltunel.jpg" alt="El túnel" width="100" height="150" />
+                <img
+                  src="../fotoslibros/eltunel.jpg"
+                  alt="El túnel"
+                  width="100"
+                  height="150"
+                />
               </a>
             </div>
 
             <div class="carrusel-item">
               <a href="Informaciondellibro.html">
-                <img src="../fotoslibros/losdetectivessalvajes.jpg" alt="Los detectives salvajes" width="100" height="150" />
+                <img
+                  src="../fotoslibros/losdetectivessalvajes.jpg"
+                  alt="Los detectives salvajes"
+                  width="100"
+                  height="150"
+                />
               </a>
             </div>
 
             <div class="carrusel-item">
               <a href="Informaciondellibro.html">
-                <img src="../fotoslibros/comoaguaparachocolate.jpg" alt="Como agua para chocolate" width="100" height="150" />
+                <img
+                  src="../fotoslibros/comoaguaparachocolate.jpg"
+                  alt="Como agua para chocolate"
+                  width="100"
+                  height="150"
+                />
               </a>
             </div>
 
             <div class="carrusel-item">
               <a href="Informaciondellibro.html">
-                <img src="../fotoslibros/elaleph.jpg" alt="El Aleph" width="100" height="150" />
+                <img
+                  src="../fotoslibros/elaleph.jpg"
+                  alt="El Aleph"
+                  width="100"
+                  height="150"
+                />
               </a>
             </div>
 
             <div class="carrusel-item">
               <a href="Informaciondellibro.html">
-                <img src="../fotoslibros/lasombradelviento.jpg" alt="La sombra del viento" width="100" height="150" />
+                <img
+                  src="../fotoslibros/lasombradelviento.jpg"
+                  alt="La sombra del viento"
+                  width="100"
+                  height="150"
+                />
               </a>
             </div>
           </div>
@@ -202,32 +318,31 @@
         <button class="prev">⟨</button>
         <button class="next">⟩</button>
       </section>
+    </main>
 
-  </main>
+    <footer>
+      <h2>Derechos reservados de autor - Creado por Chelo</h2>
+      <p>© 2025 Café Literario — Diseñado con pasión por la lectura.</p>
 
-
-  <footer>
-    <h2>Derechos reservados de autor - Creado por Chelo</h2>
-    <p>© 2025 Café Literario — Diseñado con pasión por la lectura.</p>
-
-    <ul class="redes">
-      <li>
-        <img src="../assets/facebook.png" alt="facebook"
-        width="15">
-        <a href="https://www.facebook.com" target="_blank">Facebook</a>
-      </li>
-      <li>
-        <img src="../assets/instagram.png" alt="instagram"
-        width="18">
-        <a href="https://www.instagram.com" target="_blank">Instagram</a>
-      </li>      
-      <li>
-      <img src="../assets/twitter.png" alt="twitter"
-      width="15">
-        <a href="https://www.twitter.com" target="_blank">Twitter</a>
-      </li>
-    </ul>
-  </footer>
-
-</body>
+      <ul class="redes">
+        <li>
+          <img src="../assets/facebook.png" alt="facebook" width="15" />
+          <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        </li>
+        <li>
+          <img src="../assets/instagram.png" alt="instagram" width="18" />
+          <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </li>
+        <li>
+          <img src="../assets/twitter.png" alt="twitter" width="15" />
+          <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        </li>
+      </ul>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
