@@ -132,24 +132,40 @@ body {
 }
 
 /* -- MAIN INDEX-- */
-.container-index {
+.container-index-index main{
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 40px;
   padding: 0;
 }
+.container-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.container-index main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+  margin: 40px;
+  padding: 0;
+  }
+
 main .titulos {
   text-align: center;
+  margin: 20px auto;
   background-color: rgb(165, 200, 24);
   color:rgb(2, 2, 2);
-  padding:1rem ;
+  padding: 1rem 1rem 1rem 1rem;
   border-radius: 10px;
   font-family: "Arial", sans-serif;
   font-size: 30px;
   font-weight: bold;
-  margin: 2px auto;
-  width: 28%;
+  width: 30% ;
   opacity: 85%;
 
 }
@@ -175,7 +191,7 @@ main .el-espacio1 {
   align-items: center;
   color: black;
   font-weight: bold;
-  background-color: rgb(165, 200, 24);
+  background-color: rgb(165, 201, 24);
   opacity: 85%;
   border-radius: 10px;
   padding: 10px;
