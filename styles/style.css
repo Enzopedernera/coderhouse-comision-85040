@@ -165,7 +165,7 @@ main .titulos {
   font-family: "Arial", sans-serif;
   font-size: 30px;
   font-weight: bold;
-  width: 30% ;
+  width: 35%;
   opacity: 85%;
 
 }
@@ -396,9 +396,9 @@ main .eventos nav ul li {
 }
 
 .Contacto {
-  max-width: 1200px;
-  margin: 4rem 10rem;
-  padding: 2rem 8rem;
+  max-width: 100%;
+  margin: 2rem 2rem;
+  padding: 2rem 2rem;
   background-color: rgb(165, 200, 24);
   opacity: 85%;
   border-radius: 20px;
@@ -418,7 +418,7 @@ main .eventos nav ul li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   margin-bottom: 3rem;
   text-align: left;
 }
@@ -624,7 +624,7 @@ footer .redes a:hover {
 
 
 /* -- RESPONSIVIDAD-- */
-@media (max-width: 768px) {
+@media (max-width: 320px), (max-width: 430px) {
   #el-espacio,
   #libreria,
   #carta,
