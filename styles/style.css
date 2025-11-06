@@ -127,10 +127,10 @@ body {
 #eventos p,
 #contacto p {
   font-family: "Arial", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;
   margin-bottom: 10px;
-  color: #222;
+  color: black;
 }
 main .libreria h2 {
   color: black;
@@ -140,6 +140,7 @@ main .libreria h2 {
   border-radius: 10px;
   margin: auto;
   margin-top: 10px;
+  font-size: 1.5rem;
 }
 /* -- MAIN INDEX-- */
 .container-index-index main{
@@ -151,9 +152,14 @@ main .libreria h2 {
 }
 .container-index {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-top: auto;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+  
 
 }
 .container-index main {
@@ -161,8 +167,9 @@ main .libreria h2 {
   flex-wrap: wrap;
   flex-direction: column;
   align-content: space-around;
-  margin: 40px;
-  padding: 0;
+  margin:0px;
+  padding: 0px;
+  border-radius: 10px;
   }
 
 main .titulos {
@@ -195,11 +202,12 @@ main .titulos {
 
 main .el-espacio,
 main .el-espacio1 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: flex; 
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
   align-items: center;
-  color: black;
   font-weight: bold;
   background-color: rgb(165, 201, 24);
   opacity: 0.85;
@@ -208,6 +216,7 @@ main .el-espacio1 {
   margin: 30px auto;
   width: 100%;
   max-width: 800px;
+ 
 }
 
 main .el-espacio img,
@@ -223,13 +232,15 @@ main .el-espacio1 img {
 
 main .el-espacio p,
 main .el-espacio1 p {
-  font-size: 15px;
-  line-height: 1.4;
+  font-size: 16px;
+  line-height: 1,5;
   text-align: left;
   font-family: "Arial", sans-serif;
   max-width: 370px;
   padding: 5px;
   margin: 0px;
+  align-items: center;
+  font-weight: bold;
 }
 
 /* --  CATEGORIAS DE LIBRERIA-- */
@@ -290,6 +301,11 @@ main .explora-libreria {
   font-family: "Arial", sans-serif; 
   width: max-content;
   margin: auto;
+  font-size: 1.5rem;
+}
+.my5{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .grid-libros {
@@ -309,6 +325,7 @@ main .explora-libreria {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   max-width: 400px;
+  text-align: center;
 }
 
 .libro-destacado:hover {
@@ -324,7 +341,7 @@ main .explora-libreria {
 
 .info-libro p {
   margin-bottom: 0.5rem;
-  text-align: left;
+  text-align:left;
 }
 .btn-success {
   display: inline-block;
@@ -359,9 +376,9 @@ main .Eventos {
   align-items: center;
   background-color: rgb(165, 200, 24);
   opacity: 85%;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 30px ; 
-  margin: 50px;
+  margin: 20px;
 }
 main .Eventos h2 {
   display: block;
@@ -413,7 +430,7 @@ main .eventos nav ul li {
   font-family: "Poppins", sans-serif;
 }
 
-.menu-carrusel {
+.menu{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -424,15 +441,15 @@ main .eventos nav ul li {
   padding: 0rem;
 }
 
-.menu-carrusel::-webkit-scrollbar {
+.menu:-webkit-scrollbar {
   height: 10px;
 }
-.menu-carrusel::-webkit-scrollbar-thumb {
+.menu:-webkit-scrollbar-thumb {
   background-color: #c7a17a;
   border-radius: 10px;
 }
 
-.menu-carrusel-item {
+.menu-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -444,12 +461,12 @@ main .eventos nav ul li {
   transition: transform 0.5s ease, box-shadow 10s ease;
 }
 
-.menu-carrusel-item:hover {
+.menu-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-.menu-carrusel-item img {
+.menu-item img {
   width: 100%;
   height: 220px;
   object-fit: cover;
@@ -457,7 +474,7 @@ main .eventos nav ul li {
   margin-bottom: 1rem;
 }
 
-.menu-carrusel-item h2 {
+.menu-item h2 {
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
   color: black;
@@ -472,22 +489,22 @@ main .eventos nav ul li {
   padding: 10px;
 }
 
-.menu-carrusel-item ul {
+.menu-item ul {
   list-style: none;
   padding: 0rem 0rem ;
 }
 
-.menu-carrusel-item li {
-  border-bottom: 1px solid #e5d3b3;
+.menu-item li {
+  border-bottom: 1px solid black;
   padding: 0.5rem 0 0.5rem 0;
-  color: #3c2a1e;
+  color: black;
   font-size: 0.95rem;
 }
 
 .Contacto {
   max-width: 100%;
   margin: 2rem 2rem;
-  padding: 2rem 2rem;
+  padding: 1rem;
   background-color: rgb(165, 200, 24);
   opacity: 85%;
   border-radius: 20px;
@@ -498,11 +515,12 @@ main .eventos nav ul li {
 .Contacto h1 {
   text-align: center;
   color: black;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  margin-top: 0rem;
 }
 
-/* --- Bloque de información --- */
+/* --Bloque de información -- */
 .info-contacto {
   display: flex;
   flex-wrap: wrap;
@@ -514,6 +532,7 @@ main .eventos nav ul li {
 
 .info-contacto img,
 .info-contacto iframe {
+  padding: 2px;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -521,7 +540,7 @@ main .eventos nav ul li {
 .texto-contacto {
   max-width: 500px;
   line-height: 1.6;
-  color: #3c2a1e;
+  color: blacks;
 }
 
 /* --- Formulario --- */
@@ -583,31 +602,37 @@ textarea {
 .botones-form input[type="reset"]:hover {
   background-color: #9cc08f;
 }
-/* ---------------------------------------------
-   CARRUSEL Y LIBRERÍA
---------------------------------------------- */
+/* --CARRUSEL Y LIBRERÍA-- */
 
 .libreria {
   text-align: center;
   padding: 20px;
 }
 
-.libreria h2 {
-  color: rgb(165, 200, 24);
-  margin-bottom: 15px;
+.libreria h2 {    
+  color: black;
+  background-color: rgb(165, 201, 24);
+  width: max-content;
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10px;
+  font-size: 1.5rem;
 }
 
 .carrusel {
   display: flex;
-  flex-wrap: nowrap;
   overflow-x: auto;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
   scroll-behavior: smooth;
-  gap: 15px;
-  padding: 10px;
+  gap: 1,5rem;
+  padding: 1rem 1rem;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 1rem 2rem;
+  
 }
-
 .carrusel::-webkit-scrollbar {
   height: 6px;
 }
@@ -628,30 +653,10 @@ textarea {
 
 .carrusel img {
   border-radius: 8px;
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   display: block;
 }
-
-.prev,
-.next {
-  background-color: rgb(165, 200, 24);
-  border: none;
-  color: #fff;
-  font-size: 22px;
-  cursor: pointer;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  margin: 10px;
-  transition: background-color 0.3s;
-}
-
-.prev:hover,
-.next:hover {
-  background-color: #b1d423;
-}
-
 /* -- FOOTER-- */
 
 footer {
