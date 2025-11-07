@@ -191,42 +191,44 @@ main .titulos {
 
 .container-espacio {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items:stretch;
+  flex-wrap: wrap;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 2rem;
 }
 
-main .el-espacio,
-main .el-espacio1 {
+main .el-espacio, .el-espacio1 {
   display: flex; 
   flex-direction: row;
-  align-content: space-around;
-  justify-content: space-evenly;
-  flex-wrap: nowrap;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   font-weight: bold;
   background-color: rgb(165, 201, 24);
   opacity: 0.85;
   border-radius: 10px;
-  padding: 10px;
-  margin: 30px auto;
+  padding: 1.5rem 2rem;
+  margin: 0rem;
   width: 100%;
-  max-width: 800px;
+  max-width: 550px;
+  box-sizing: border-box;
  
 }
 
 main .el-espacio img,
 main .el-espacio1 img {
   display: block;
-  margin: 10px 10px;
+  margin: 10px;
   border-radius: 20px;
   width: 100%;
   max-width: 300px;
-  height: 300px;
+  height:auto;
   padding: 10px;
 }
 
