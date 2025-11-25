@@ -1,6 +1,10 @@
-$primary-color : #3498db;
-
-body {
-    margin: 0;
-    padding: 70px 0 0 0;
-}
+@use "variables";
+@use "header";
+@use "footer";
+@use "espacio";
+@use "libreria";
+@use "informaciondellibro";
+@use "eventos";
+@use "carta";
+@use "contacto";
+@use "inicio";
