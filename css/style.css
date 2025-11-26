@@ -1,0 +1,250 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Libertinus+Serif+Display&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.encabezado .navbar {
+  background-color: rgb(165, 200, 24);
+  font-weight: 700;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+.encabezado .navbar .container-fluid {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 5px 15px;
+  width: 100%;
+  background-color: rgb(165, 200, 24);
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  font-style: normal;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+.encabezado .navbar .container-fluid .logo-cafe {
+  margin: 10px 10px 10px 10px;
+  border-radius: 10px;
+  width: 50px;
+}
+.encabezado .navbar .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+.encabezado .navbar .navbar-nav .navbar-nav li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+.encabezado .navbar .navbar-nav .nav-link {
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+.encabezado .navbar .navbar-nav:hover, .encabezado .navbar .navbar-nav.activo {
+  padding: 10px;
+  border-radius: 10px;
+  background: "Arial", sans-serif;
+}
+.encabezado .navbar-toggler {
+  border: none;
+  background: transparent;
+}
+.encabezado .navbar-toggler:focus {
+  box-shadow: none;
+}
+.encabezado .navbar-toggler .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+footer {
+  background-color: rgb(165, 200, 24);
+  opacity: 0.85;
+  border-radius: 10px;
+  padding: 2rem 1rem;
+  margin: 20px 50px;
+  text-align: center;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+footer h2 {
+  color: black;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+footer .redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 10px;
+}
+footer .redes a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+footer .redes a:hover {
+  color: #333;
+}
+
+.categorias {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(165, 200, 24);
+  border-radius: 10px;
+  color: black;
+  opacity: 0.85;
+  gap: 20px;
+  margin: 2px;
+  padding: 10px 5px;
+}
+.categorias .btn-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(233, 217, 45);
+  margin: 2px;
+}
+.categorias .btn-group ul {
+  list-style: none;
+}
+.categorias .btn-group .dropdown-menu {
+  background-color: rgb(233, 217, 45);
+  border-radius: 10px;
+  padding: 5px;
+}
+.categorias .btn-group .dropdown-menu .dropdown-item {
+  text-decoration: none;
+  background-color: rgb(233, 217, 45);
+  color: black;
+  display: block;
+  padding: 3px 5px;
+  transition: color 0.3s;
+}
+
+.libro-destacado-seccion h2 {
+  background-color: rgb(165, 200, 24);
+  color: black;
+  padding: 10px 10px;
+  border-radius: 10px;
+  width: max-content;
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+.grid-libros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  justify-items: center;
+  align-items: start;
+  opacity: 0.85;
+}
+
+.libro-destacado {
+  background-color: rgb(165, 200, 24);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin: auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 400px;
+  text-align: center;
+}
+.libro-destacado:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.libro-destacado img {
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.libro-destacado .info-libro p {
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+body {
+  margin: 0;
+  padding: 0px;
+  font-family: "Montserrat Alternates", "Arial", sans-serif;
+  background-image: url("../imagenescafeteria/Café y literatura.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#el-espacio,
+#libreria,
+#carta,
+#eventos,
+#contacto {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 320px;
+  margin: 20px;
+  max-width: 400px;
+  background-color: rgb(165, 200, 24);
+  opacity: 0.85;
+  border-radius: 10px;
+  padding: 40px 25px;
+  color: black;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#el-espacio:hover,
+#libreria:hover,
+#carta:hover,
+#eventos:hover,
+#contacto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+#el-espacio h2,
+#libreria h2,
+#carta h2,
+#eventos h2,
+#contacto h2 {
+  color: black;
+  font-family: "Arial", sans-serif;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+#el-espacio h2 a,
+#libreria h2 a,
+#carta h2 a,
+#eventos h2 a,
+#contacto h2 a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+#el-espacio p,
+#libreria p,
+#carta p,
+#eventos p,
+#contacto p {
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

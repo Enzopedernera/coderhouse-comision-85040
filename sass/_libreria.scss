@@ -1,0 +1,84 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+
+.categorias {
+    @include m.flex(row, wrap, center, center);
+    background-color: v.$verde-principal;
+    border-radius: 10px;
+    color: black;
+    opacity: 0.85;
+    gap: 20px;
+    margin: 2px;
+    padding: 10px 5px;
+
+    .btn-group {
+    @include m.fle(column);
+    align-items: center;
+    background-color: v.$amarillo-secundario;
+    margin: 2px;
+
+    ul {
+        list-style: none;
+        }
+
+    .dropdown-menu {
+        background-color: v.$amarillo-secundario;
+        border-radius: 10px;
+        padding: 5px;
+
+    .dropdown-item {
+        text-decoration: none;
+        background-color: v.$amarillo-secundario;
+        color: black;
+        display: block;
+        padding: 3px 5px;
+        transition: color 0.3s;
+        }
+    }
+    } 
+}
+.libro-destacado-seccion h2 {
+    background-color: v.$verde-principal;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 10px;
+    width: max-content;
+    margin: auto;
+    font-size: 1.5rem;
+}
+.grid-libros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    justify-items: center;
+    align-items: start;
+    opacity: 0.85;
+}
+
+.libro-destacado {
+    background-color: v.$verde-principal;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    max-width: 400px;
+    text-align: center;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+    img {
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        }
+
+    .info-libro p {
+    margin-bottom: 0.5rem;
+    text-align: left;
+    }
+}
+

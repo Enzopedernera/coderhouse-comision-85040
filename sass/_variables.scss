@@ -4,7 +4,6 @@
 
 $verde-principal: rgb(165, 200, 24);
 $amarillo-secundario: rgb(233, 217, 45);
-$negro:black;
 $gris-sombra: rgba(0, 0, 0, 0.2);
 
 //tipografia
@@ -33,4 +32,9 @@ $fondo-principal: "../imagenescafeteria/Caféyliteratura.jpg";
     @media (max-width: 320px), (max-width: 430px) {
         @content
     }
+} 
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
 }
